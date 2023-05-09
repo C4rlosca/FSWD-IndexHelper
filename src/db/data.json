@@ -1,0 +1,302 @@
+[
+    {
+      "id": 1,
+      "type": "lesson",
+      "name": "CBWD12 - Sesión 37 - 2023-04-24",
+      "content": ["json", "js", "async", "promise"],
+      "date": "2023/04/24",
+      "duration": 180,
+      "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=5738",
+      "teacher": "Antonio"
+    },
+    {
+      "id": 2,
+      "type": "tutorial",
+      "name": "CBWD12 - Tutorial 1 - 2023-04-26",
+      "content": ["react", "hooks", "jsx", "state"],
+      "date": "2023/04/26",
+      "duration": 120,
+      "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=5805",
+      "teacher": "María"
+    },
+    {
+      "id": 3,
+      "type": "lesson",
+      "name": "CBWD12 - Sesión 38 - 2023-04-27",
+      "content": ["node", "express", "middleware"],
+      "date": "2023/04/27",
+      "duration": 180,
+      "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=5832",
+      "teacher": "Antonio"
+    },
+    {
+      "id": 4,
+      "type": "lesson",
+      "name": "CBWD12 - Sesión 39 - 2023-04-28",
+      "content": ["mongodb", "mongoose", "queries"],
+      "date": "2023/04/28",
+      "duration": 180,
+      "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=5861",
+      "teacher": "Carlos"
+    },
+    {
+      "id": 5,
+      "type": "tutorial",
+      "name": "CBWD12 - Tutorial 2 - 2023-04-29",
+      "content": ["jest", "testing", "mocks", "assertions"],
+      "date": "2023/04/29",
+      "duration": 120,
+      "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=5890",
+      "teacher": "María"
+    },
+    {
+      "id": 6,
+      "type": "lesson",
+      "name": "CBWD12 - Sesión 40 - 2023-05-01",
+      "content": ["react", "context", "redux", "sagas"],
+      "date": "2023/05/01",
+      "duration": 180,
+      "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=5923",
+      "teacher": "Carlos"
+    },
+    {
+        "id": 7,
+        "type": "lesson",
+        "name": "CBWD12 - Sesión 41 - 2023-05-02",
+        "content": ["next", "ssr", "routing"],
+        "date": "2023/05/02",
+        "duration": 180,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=5956",
+        "teacher": "Antonio"
+      },
+      {
+        "id": 8,
+        "type": "tutorial",
+        "name": "CBWD12 - Tutorial 3 - 2023-05-03",
+        "content": ["webpack", "config", "plugins", "optimization"],
+        "date": "2023/05/03",
+        "duration": 120,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=5983",
+        "teacher": "María"
+      },
+      {
+        "id": 9,
+        "type": "lesson",
+        "name": "CBWD12 - Sesión 42 - 2023-05-04",
+        "content": ["aws", "s3", "lambda", "api gateway"],
+        "date": "2023/05/04",
+        "duration": 180,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=6012",
+        "teacher": "Carlos"
+      },
+      {
+        "id": 10,
+        "type": "lesson",
+        "name": "CBWD12 - Sesión 43 - 2023-05-05",
+        "content": ["graphql", "queries", "mutations", "subscriptions"],
+        "date": "2023/05/05",
+        "duration": 180,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=6041",
+        "teacher": "Antonio"
+      },
+      {
+        "id": 11,
+        "type": "tutorial",
+        "name": "CBWD12 - Tutorial 4 - 2023-05-06",
+        "content": ["storybook", "components", "props", "addons"],
+        "date": "2023/05/06",
+        "duration": 120,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=6070",
+        "teacher": "María"
+      },
+      {
+        "id": 12,
+        "type": "lesson",
+        "name": "CBWD12 - Sesión 44 - 2023-05-08",
+        "content": ["docker", "containers", "kubernetes", "helm"],
+        "date": "2023/05/08",
+        "duration": 180,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=6103",
+        "teacher": "Carlos"
+      },
+      {
+        "id": 13,
+        "type": "lesson",
+        "name": "CBWD12 - Sesión 46 - 2023-05-11",
+        "content": ["jest", "testing-library", "unit tests", "integration tests"],
+        "date": "2023/05/11",
+        "duration": 180,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=6161",
+        "teacher": "Antonio"
+      },
+      {
+        "id": 14,
+        "type": "lesson",
+        "name": "CBWD12 - Sesión 47 - 2023-05-12",
+        "content": ["redux", "store", "actions", "reducers"],
+        "date": "2023/05/12",
+        "duration": 180,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=6190",
+        "teacher": "Carlos"
+      },
+      {
+        "id": 15,
+        "type": "tutorial",
+        "name": "CBWD12 - Tutorial 5 - 2023-05-13",
+        "content": ["next", "seo", "analytics", "performance"],
+        "date": "2023/05/13",
+        "duration": 120,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=6219",
+        "teacher": "María"
+      },
+      {
+        "id": 16,
+        "type": "lesson",
+        "name": "CBWD12 - Sesión 48 - 2023-05-15",
+        "content": ["nodejs", "npm", "yarn", "package.json"],
+        "date": "2023/05/15",
+        "duration": 180,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=6248",
+        "teacher": "Carlos"
+      },
+      {
+        "id": 17,
+        "type": "lesson",
+        "name": "CBWD12 - Sesión 49 - 2023-05-16",
+        "content": ["react native", "expo", "components", "navigation"],
+        "date": "2023/05/16",
+        "duration": 180,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=6277",
+        "teacher": "Antonio"
+      },
+      {
+        "id": 18,
+        "type": "tutorial",
+        "name": "CBWD12 - Tutorial 6 - 2023-05-17",
+        "content": ["tailwindcss", "utility classes", "responsive design", "customization"],
+        "date": "2023/05/17",
+        "duration": 120,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=6306",
+        "teacher": "María"
+      },
+      {
+        "id": 19,
+        "type": "lesson",
+        "name": "CBWD12 - Sesión 50 - 2023-05-18",
+        "content": ["aws", "ec2", "elastic beanstalk", "rds"],
+        "date": "2023/05/18",
+        "duration": 180,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=6334",
+        "teacher": "Carlos"
+      },
+      {
+        "id": 20,
+        "type": "lesson",
+        "name": "CBWD12 - Sesión 51 - 2023-05-19",
+        "content": ["react router", "dynamic routing", "protected routes", "query parameters"],
+        "date": "2023/05/19",
+        "duration": 180,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=6363",
+        "teacher": "Antonio"
+      },
+      {
+        "id": 21,
+        "type": "tutorial",
+        "name": "CBWD12 - Tutorial 7 - 2023-05-20",
+        "content": ["firebase", "real-time database", "authentication", "deployment"],
+        "date": "2023/05/20",
+        "duration": 120,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=6392",
+        "teacher": "María"
+      },
+      {
+        "id": 22,
+        "type": "lesson",
+        "name": "CBWD12 - Sesión 52 - 2023-05-22",
+        "content": ["typescript", "generics", "interfaces", "decorators"],
+        "date": "2023/05/22",
+        "duration": 180,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=6421",
+        "teacher": "Carlos"
+      },
+      {
+        "id": 23,
+        "type": "lesson",
+        "name": "CBWD12 - Sesión 53 - 2023-05-23",
+        "content": ["serverless", "lambda functions", "api gateway", "cloudfront"],
+        "date": "2023/05/23",
+        "duration": 180,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=6450",
+        "teacher": "Antonio"
+      },
+      {
+        "id": 24,
+        "type": "tutorial",
+        "name": "CBWD12 - Tutorial 8 - 2023-05-24",
+        "content": ["graphql", "apollo client", "mutations", "subscriptions"],
+        "date": "2023/05/24",
+        "duration": 120,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=6479",
+        "teacher": "María"
+      },
+      {
+        "id": 25,
+        "type": "lesson",
+        "name": "CBWD12 - Sesión 54 - 2023-05-25",
+        "content": ["react hooks", "useEffect", "useContext", "custom hooks"],
+        "date": "2023/05/25",
+        "duration": 180,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=6508",
+        "teacher": "Carlos"
+      },
+      {
+        "id": 26,
+        "type": "lesson",
+        "name": "CBWD12 - Sesión 55 - 2023-05-26",
+        "content": ["redux", "store", "reducers", "actions"],
+        "date": "2023/05/26",
+        "duration": 180,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=6537",
+        "teacher": "Antonio"
+      },
+      {
+        "id": 27,
+        "type": "tutorial",
+        "name": "CBWD12 - Tutorial 9 - 2023-05-27",
+        "content": ["next.js", "server-side rendering", "static generation", "dynamic import"],
+        "date": "2023/05/27",
+        "duration": 120,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=6566",
+        "teacher": "María"
+      },
+      {
+        "id": 28,
+        "type": "lesson",
+        "name": "CBWD12 - Sesión 56 - 2023-05-29",
+        "content": ["express", "routing", "middleware", "controllers"],
+        "date": "2023/05/29",
+        "duration": 180,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=6595",
+        "teacher": "Carlos"
+      },
+      {
+        "id": 29,
+        "type": "lesson",
+        "name": "CBWD12 - Sesión 57 - 2023-05-30",
+        "content": ["testing", "unit tests", "integration tests", "test-driven development"],
+        "date": "2023/05/30",
+        "duration": 180,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=6624",
+        "teacher": "Antonio"
+      },
+      {
+        "id": 30,
+        "type": "tutorial",
+        "name": "CBWD12 - Tutorial 10 - 2023-05-31",
+        "content": ["styled-components", "css-in-js", "theming", "server-side rendering"],
+        "date": "2023/05/31",
+        "duration": 120,
+        "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=6653",
+        "teacher": "María"
+      }
+    ]
