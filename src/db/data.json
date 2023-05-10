@@ -1,27 +1,27 @@
 [
   {
-    "id": 1,
+    "id": 16,
     "type": "tutoría",
-    "session": 37,
+    "session": 4,
     "tags": ["json", "js", "async", "promise"],
     "description": "Repasamos la estructura de un archivo REACT",
     "year": 2023,
-    "month": 4,
-    "day": 24,
-    "duration": 120,
-    "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=5737",
+    "month": 2,
+    "day": 17,
+    "duration": 3796, 
+    "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=5229",
     "teacher": "Antonio"
   },
   {
     "id": 2,
-    "type": "clase",
+    "type": "sesión",
     "session": 38,
     "tags": ["json", "react", "DOM", "promise"],
     "description": "Tratamos cómo instalar react e iniciar un proyecto",
     "year": 2023,
     "month": 4,
     "day": 24,
-    "duration": 270,
+    "duration": 972000,
     "link": "https://campus.codespaceacademy.com/mod/page/view.php?id=5738",
     "teacher": "Antonio"
   },
@@ -38,7 +38,7 @@
   },
   {
     "id": 4,
-    "type": "clase",
+    "type": "sesión",
     "session": 39,
     "tags": ["css", "sass", "scss"],
     "description": "Repasamos la estructura de un archivo CSS",
@@ -75,7 +75,7 @@
   },
   {
     "id": 7,
-    "type": "clase",
+    "type": "sesión",
     "session": 41,
     "tags": ["js", "es6", "promise", "async"],
     "description": "Introducción a las promesas y async/await",
