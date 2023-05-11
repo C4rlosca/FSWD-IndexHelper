@@ -13,10 +13,15 @@
   font-family: sans-serif;
   font-size: 1.2rem;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   font-family: "Poppins", sans-serif;
 }
-.Card .Thumbnail {
+.Card:hover {
+  transform: translateY(-2px);
+  box-shadow: #ffffff30 0 0 10px;
+  transition: all 0.1s ease-in-out;
+}
+.Card container.Thumbnail {
   width: 100%;
   height: 55%;
   display: flex;
@@ -24,13 +29,17 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-.Card .Thumbnail .Title {
+/* .Card .Thumbnail div.Overlay {
+  position: relative;
+  background: linear-gradient(31deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,1) 100%);
+} */
+.Card .Thumbnail div.Title {
   position: absolute;
   right: 10px;
-  top: 10px;
+  top: 6px;
   text-align: right;
 }
-.Card .Thumbnail .Title .Label {
+.Card .Thumbnail .Title p.Label {
   font-size: 2rem;
   font-weight: 600;
 }
@@ -43,7 +52,7 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-.Card .Thumbnail .Duration {
+.Card .Thumbnail div.Duration {
   position: absolute;
   bottom: 1px;
   left: 5px;
@@ -54,39 +63,42 @@
   padding: 0.1em 0.25em; 
   border-radius: 5px;
 }
-.Card .Thumbnail .By {
-  position: absolute;
-  right: 5px;
-  text-align: right;
-  width: 20%;
-  color: white;
-}
 .Card .Thumbnail span {
   display: inline-block;
   color: rgb(175, 175, 175);
 }
-
-.Card .Elements {
+.Card container.Elements {
   width: 100%;
   height: 45%;
   display: flex;
   flex-direction: column;
 }
-.Card .Elements .Description {
+.Card .Elements div.Description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40%;
   width: 100%;
-  padding: 10px;
+  padding: 0 10px;
 }
-.Card .Elements .BottomCard {
+.Card .Elements div.Separator {
+  width: 80%; 
+  height: 1px;
+background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+  margin: 0 auto;
+}
+.Card .Elements div.BottomCard {
   width: 100%;
-  height: 100%;
+  height: 60%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: left;
   align-items: center;
 }
-.Card .Elements button {
+.Card .Elements .BottomCard button {
   width: 60px;
   height: 60px;
+  margin: 15px;
   background-color: #737373;
   border-radius: 4px;
   border-width: 0;
@@ -99,12 +111,12 @@
   will-change: box-shadow, transform;
   /* margin: auto; */
 }
-.Card .Elements button:hover {
+.Card .Elements .BottomCard button:hover {
   box-shadow: rgba(164, 164, 164, 0.4) 0 4px 8px,
     rgba(4164, 164, 164, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   transform: translateY(-2px);
 }
-.Card .Elements button:active {
+.Card .Elements .BottomCard button:active {
   box-shadow: #d6d6e770 0 -8px 5px 0 inset, #00000070 0 5px 3px inset;
   /* background-color: #4c4c4c; */
   transform: translateY(2px);
