@@ -1,6 +1,6 @@
 import Data from "../db/data.json";
 import "./Card.css";
-import VID from "../assets/images/VID2.jpg";
+import VID from "../assets/images/VID.jpg";
 import DOC from "../assets/images/DOC.jpg";
 
 const SecondsToString = (seconds) => {
@@ -17,8 +17,8 @@ const SecondsToString = (seconds) => {
   }
 };
 const DatetoString = (year, month, day) => {
-  month = (month < 10) ? "0" + month : month;
-  day = (day < 10) ? "0" + day : day;
+  month = month < 10 ? "0" + month : month;
+  day = day < 10 ? "0" + day : day;
   let date = `${day}/${month}/${year}`;
   return date;
 };
@@ -28,17 +28,20 @@ const Card = () => {
     return (
       <div className="Card" key={index}>
         <container className="Thumbnail">
+          {/* <div className="Overlay"></div> */}
           <img src={!item.file ? VID : DOC} alt="thumbnail" />
           <div className="Title">
             <p className="Label">
               {item.session
-                ? `${item.type.slice(0, 1).toUpperCase()}${item.type.slice(1)} ${
-                    item.session
-                  }`
+                ? `${item.type.slice(0, 1).toUpperCase()}${item.type.slice(
+                    1
+                  )} ${item.session}`
                 : ""}
             </p>
-          <p className="Date">{DatetoString(item.year, item.month, item.day)}</p>
-            <p><span>by</span> {item.teacher}</p>
+            <p className="Date">
+              {DatetoString(item.year, item.month, item.day)}
+            </p>
+            <p>{item.teacher}</p>
           </div>
           <div class="Duration">
             <p>{SecondsToString(item.duration) || ""}</p>
@@ -46,9 +49,10 @@ const Card = () => {
         </container>
         <container className="Elements">
           <div className="Description">
-          <span>{item.file}</span>
+            <span>{item.file}</span>
             <p>{item.description}</p>
           </div>
+          <div className="Separator"></div>
           <div className="BottomCard">
             <button href={item.link}>Docs</button>
             <ul>
