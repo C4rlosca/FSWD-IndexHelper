@@ -42,6 +42,7 @@ const Card = () => {
               {DatetoString(item.year, item.month, item.day)}
             </p>
             <p>{item.teacher}</p>
+            <span>{item.file}</span>
           </div>
           <div class="Duration">
             <p>{SecondsToString(item.duration) || ""}</p>
@@ -49,7 +50,6 @@ const Card = () => {
         </container>
         <container className="Elements">
           <div className="Description">
-            <span>{item.file}</span>
             <p>{item.description}</p>
           </div>
           <div className="Separator"></div>
