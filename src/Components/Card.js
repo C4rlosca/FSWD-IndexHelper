@@ -1,6 +1,6 @@
 import Data from "../db/data.json";
 import "./Card.css";
-import VID from "../assets/images/VID2.jpg";
+import VID from "../assets/images/VID.jpg";
 import DOC from "../assets/images/DOC.jpg";
 
 const SecondsToString = (seconds) => {
@@ -41,9 +41,7 @@ const Card = () => {
             <p className="Date">
               {DatetoString(item.year, item.month, item.day)}
             </p>
-            <p>
-              <span>by</span> {item.teacher}
-            </p>
+            <p>{item.teacher}</p>
           </div>
           <div class="Duration">
             <p>{SecondsToString(item.duration) || ""}</p>

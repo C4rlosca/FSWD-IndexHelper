@@ -17,7 +17,6 @@
   font-family: "Poppins", sans-serif;
 }
 .Card:hover {
-  transform: translateY(-2px);
   box-shadow: #ffffff30 0 0 10px;
   transition: all 0.1s ease-in-out;
 }
@@ -28,10 +27,12 @@
   position: relative;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  overflow: hidden;
+  background-color: black;
 }
 /* .Card .Thumbnail div.Overlay {
   position: relative;
-  background: linear-gradient(31deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(25deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,1) 100%);
 } */
 .Card .Thumbnail div.Title {
   position: absolute;
@@ -51,6 +52,14 @@
   /* border: 1px solid white; */
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  transition: all 0.3s ease-in-out;
+  mask-image: linear-gradient(30deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 5%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 60%, rgba(0,0,0,0.2) 80%, rgba(0,0,0,0) 100%);
+}
+.Card:hover .Thumbnail img {
+  transform:scale(1.05);
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  overflow: hidden;
 }
 .Card .Thumbnail div.Duration {
   position: absolute;
@@ -59,13 +68,10 @@
 }
 .Card .Thumbnail .Duration p {
   opacity: 0.85;
-  background-color: #ffffff10;
-  padding: 0.1em 0.25em; 
+  background-color: #ffffff20;
+  padding: 0.05em 0.25em;
+  margin: 5px 0;
   border-radius: 5px;
-}
-.Card .Thumbnail span {
-  display: inline-block;
-  color: rgb(175, 175, 175);
 }
 .Card container.Elements {
   width: 100%;
@@ -82,9 +88,14 @@
   padding: 0 10px;
 }
 .Card .Elements div.Separator {
-  width: 80%; 
+  width: 80%;
   height: 1px;
-background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
   margin: 0 auto;
 }
 .Card .Elements div.BottomCard {
@@ -135,11 +146,11 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3)
   padding: 0.2em 0.5em;
   margin: 0.2em 0.2em;
   border-radius: 5px;
-  transition: background-color 0.20s;
+  transition: background-color 0.2s;
 }
 .Card .Elements .BottomCard ul li:hover {
   cursor: pointer;
   background-color: #73737380;
-  transition: background-color 0.20s;
+  transition: background-color 0.2s;
   will-change: background-color;
 }
