@@ -28,7 +28,6 @@ const Card = () => {
     return (
       <div className="Card" key={index}>
         <container className="Thumbnail">
-          {/* <div className="Overlay"></div> */}
           <img src={!item.file ? VID : DOC} alt="thumbnail" />
           <div className="Title">
             <p className="Label">

@@ -1,40 +1,43 @@
 import Card from "./Components/Card";
 import { useState } from "react";
 import Data from "./db/data.json";
+import Ensayo from "./Ensayo";
 
 const App = () => {
-  const [search, setSearch] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
+  // const [search, setSearch] = useState("");
+  // const [searchResults, setSearchResults] = useState([]);
 
-  const handleSearch = (e) => {
-    const query = e.target.value.toLowerCase();
-    setSearch(query);
+  // const handleSearch = (e) => {
+  //   const query = e.target.value.toLowerCase();
+  //   setSearch(query);
 
-    const results = Data.filter((item) => {
-      return item.tags.some((tag) => tag.toLowerCase().includes(query));
-    });
+  //   const results = Data.filter((item) => {
+  //     return item.tags.some((tag) => tag.toLowerCase().includes(query));
+  //   });
 
-    setSearchResults(results);
-  };
+  //   setSearchResults(results);
+  // };
+  const selector = (e) => {};
 
   return (
     <div className="App">
       <form>
-        <input
+        {/* <input
           className="input"
           type="text"
           placeholder="Search..."
           value={search}
           onChange={handleSearch}
-        />
+        /> */}
         <select className="selector">
           <option value="todos" selected>Todos</option>
           <option value="sesión">Clase</option>
           <option value="tutoría">Tutoría</option>
           <option value="file">Otros</option>
         </select>
+        <Ensayo />
       </form>
-      <Card props={searchResults} />
+      <Card filtered={selector}/>
     </div>
   );
 };
