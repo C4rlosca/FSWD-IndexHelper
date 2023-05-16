@@ -66,14 +66,14 @@
   {
     "id": 3,
     "type": "file",
-    "tags": ["máquina virtual", "máquina", "maquina", "virtual", "virtualbox", "vbox"],
+    "tags": ["máquina virtual", "máquina", "maquina", "virtual", "virtualbox", "vbox","linux", "mint", "linux mint", "linuxmint"],
     "year": 2023,
     "month": 2,
     "day": 10,
     "link": "https://campus.codespaceacademy.com/mod/url/view.php?id=5212",
-    "file": "PDF",
-    "title": "Enlace descarga máquina virtual",
-    "description": "Haga clic en el enlace https://ftp.cixug.es/mint/stable/21/linuxmint-21-cinnamon-64bit.iso para abrir el recurso."
+    "file": "Link",
+    "title": "Enlace descarga Linux Mint",
+    "description": "Entra para acceder al enlace de descarga para el sistema operativo Linux Mint"
   },
 
   {
