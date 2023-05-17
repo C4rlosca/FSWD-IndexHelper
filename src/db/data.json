@@ -147,7 +147,7 @@
     "link": "https://campus.codespaceacademy.com/mod/resource/view.php?id=5224&forceview=1",
     "file": "PDF",
     "title": "Ejercicios Linux",
-    "description": "Ejercicios básicos en consola. Llegar a una carpeta, crear carpetas, crear archivos, borrar archivos, borrar carpetas, mover archivos, copiar archivos, etc."
+    "description": "Ejercicios básicos en consola. Llegar a una carpeta, crear carpetas, crear archivos, borrar archivos, borrar carpetas, mover archivos, copiar archivos, eliminar archivos, modificar permisos, comandos de recursividad, etc."
   },
   {
     "id": 10,

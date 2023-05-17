@@ -1,59 +1,80 @@
+import "./App.css";
+import Data from "./db/data.json";
+import SearchBar from "./Components/SearchBar";
+import Wrapper from "./Components/Wrapper";
 import Card from "./Components/Card";
 import { useState } from "react";
-import Data from "./db/data.json";
 
 const App = () => {
-  const [search, setSearch] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
-
-  const handleSearch = (e) => {
-    const query = e.target.value.toLowerCase();
-    setSearch(query);
-
-    const results = Data.filter((item) => {
-      return item.tags.some((tag) => tag.toLowerCase().includes(query));
-    });
-
-    setSearchResults(results);
+  const [items, setItems] = useState(Data);
+  const handleSearch = (search) => {
+    console.log("handlesearch", search);
+    let filteredItems = [];
+    if (search[1] === "todos" && search[0].length > 0) {
+      console.log("todos con busqueda");
+      filteredItems = Data.filter((item) => {
+        return item.tags.toLowerCase().includes(search[0].toLowerCase());
+      });
+    } else if (search[1] === "todos") {
+      console.log("todos sin busqueda");
+      filteredItems = Data;
+    } else {
+      if (search[0].lenght === 0) {
+        console.log("loquesea sin busqueda");
+        filteredItems = Data.filter((item) =>
+          item.type.find((kind) => {
+            return kind === search[1];
+          })
+        );
+      } else {
+        console.log("loquesea con busqueda");
+        filteredItems = Data.filter((item) => {
+          return (
+            item.tags.includes(search[0].toLowerCase()) &&
+            item.type.find((kind) => {
+              return kind === search[1];
+            })
+          );
+        });
+      }
+    }
+    console.log(filteredItems);
+    setItems(filteredItems);
   };
 
   return (
-    <div className="App">
-      <form>
-        <input
-          className="input"
-          type="text"
-          placeholder="Search..."
-          value={search}
-          onChange={handleSearch}
-        />
-        <select className="selector">
-          <option value="todos" selected>Todos</option>
-          <option value="sesión">Clase</option>
-          <option value="tutoría">Tutoría</option>
-          <option value="file">Otros</option>
-        </select>
-      </form>
-      <Card props={searchResults} />
-    </div>
+    <>
+      <header>
+        <SearchBar onSearch={handleSearch} />
+      </header>
+      <main>
+        <Wrapper>
+          {(items.length > 0 &&
+            items.map((item) => {
+              return (
+                <Card
+                  key={item.id}
+                  file={item.file}
+                  type={item.type}
+                  session={item.session}
+                  tags={item.tags}
+                  year={item.year}
+                  month={item.month}
+                  day={item.day}
+                  duration={item.duration}
+                  description={item.description}
+                  link={item.link}
+                  teacher={item.teacher}
+                  title={item.title}
+                  seconds={item.seconds}
+                />
+              );
+            })) || <h4 className="alert">No results found</h4>}
+        </Wrapper>
+      </main>
+      <footer>Made with love by -Javi & Carlos-</footer>
+    </>
   );
 };
 
 export default App;
-
-// =========================================================================================
-
-// const SearchBar = () => {
-//   return (
-//     <div>
-      
-//       {searchResults.map((item) => (
-//         <div key={item.id}>
-//           <h3>{item.type}</h3>
-//           <p>{item.description}</p>
-//           <a href={item.link}>Link</a>
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };
