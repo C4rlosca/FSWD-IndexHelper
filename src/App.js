@@ -14,7 +14,7 @@ const App = () => {
     if (search[1] === "todos" && search[0].length > 0) {
       console.log("Filtrar por tags y selector -todos-");
       filteredItems = Data.filter((item) => {
-        return item.tags.toLowerCase().includes(search[0].toLowerCase());
+        return item.tags.includes(search[0].toLowerCase());//
       });
     } else if (search[1] === "todos" && search[0].length === 0) {
       console.log("Mostrar todos los elementos cuando la selección es -todos- sin búsqueda");

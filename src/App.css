@@ -1,10 +1,10 @@
 header {
   width: 450px;
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 header h1.Header-title {
   text-align: center;
@@ -24,4 +24,11 @@ header h1.Header-title {
   100% {
     text-shadow: #ffffff80 0 0 10px;
   }
+}
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
