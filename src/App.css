@@ -14,7 +14,7 @@ header h1.Header-title {
   animation: shadow-change 4s infinite;
   text-shadow: #ffffff80 0 0 10px;
 }
-@keyframes color-change {
+@keyframes shadow-change {
   0% {
     text-shadow: #ffffff80 0 0 10px;
   }
