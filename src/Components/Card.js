@@ -24,7 +24,7 @@ const Card = (props) => {
   };
   return (
     <div className="Card">
-      <container className="Thumbnail">
+      <section className="Thumbnail">
         <img src={!props.file ? VID : DOC} alt="thumbnail" />
         <div className="Title">
           <p className="Label">
@@ -41,11 +41,11 @@ const Card = (props) => {
           <span>{props.title}</span>
           <span>{props.file}</span>
         </div>
-        <div class="Duration">
+        <div className="Duration">
           <p>{SecondsToString(props.duration) || ""}</p>
         </div>
-      </container>
-      <container className="Elements">
+      </section>
+      <section className="Elements">
         <div className="Description">
           <p>{props.description}</p>
         </div>
@@ -58,7 +58,7 @@ const Card = (props) => {
             })}
           </ul>
         </div>
-      </container>
+      </section>
     </div>
   );
 };

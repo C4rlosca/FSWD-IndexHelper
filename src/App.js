@@ -9,31 +9,26 @@ const App = () => {
   const [items, setItems] = useState(Data);
   const handleSearch = (search) => {
     console.log("handlesearch", search);
+
     let filteredItems = [];
     if (search[1] === "todos" && search[0].length > 0) {
-      console.log("todos con busqueda");
+      console.log("Filtrar por tags y selector -todos-");
       filteredItems = Data.filter((item) => {
         return item.tags.toLowerCase().includes(search[0].toLowerCase());
       });
-    } else if (search[1] === "todos") {
-      console.log("todos sin busqueda");
+    } else if (search[1] === "todos" && search[0].length === 0) {
+      console.log("Mostrar todos los elementos cuando la selección es -todos- sin búsqueda");
       filteredItems = Data;
     } else {
-      if (search[0].lenght === 0) {
-        console.log("loquesea sin busqueda");
-        filteredItems = Data.filter((item) =>
-          item.type.find((kind) => {
-            return kind === search[1];
-          })
-        );
+      if (search[0].length === 0) {
+        console.log("Filtrar por tipo cuando no hay palabra para la busqueda");
+        filteredItems = Data.filter((item) => item.type.includes(search[1]));
       } else {
-        console.log("loquesea con busqueda");
+        console.log("Filtrar por palabra clave y tipo");
         filteredItems = Data.filter((item) => {
           return (
             item.tags.includes(search[0].toLowerCase()) &&
-            item.type.find((kind) => {
-              return kind === search[1];
-            })
+            item.type.includes(search[1])
           );
         });
       }
@@ -49,7 +44,7 @@ const App = () => {
       </header>
       <main>
         <Wrapper>
-          {(items.length > 0 &&
+          {items.length > 0 ? (
             items.map((item) => {
               return (
                 <Card
@@ -69,7 +64,10 @@ const App = () => {
                   seconds={item.seconds}
                 />
               );
-            })) || <h4 className="alert">No results found</h4>}
+            })
+          ) : (
+            <h4 className="alert">No results found</h4>
+          )}
         </Wrapper>
       </main>
       <footer>Made with love by -Javi & Carlos-</footer>

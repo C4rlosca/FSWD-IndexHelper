@@ -1,7 +1,7 @@
 [
  
   {
-    "id": 5,
+    "id": 999,
     "type": "tutoría",
     "session": 40,
     "tags": ["html", "xml"],
@@ -14,7 +14,7 @@
     "teacher": "Juan"
   },
   {
-    "id": 6,
+    "id": 998,
     "type": "file",
     "tags": ["react", "javascript", "json"],
     "year": 2023,
@@ -25,7 +25,7 @@
     "title": "Guía de inicio rápido de React"
   },
   {
-    "id": 7,
+    "id": 997,
     "type": "sesión",
     "session": 41,
     "tags": ["js", "es6", "promise", "async"],
