@@ -1,62 +1,26 @@
-import Card from "./Components/Card";
 import { useState } from "react";
-import Data from "./db/data.json";
 import Ensayo from "./Ensayo";
 
 const App = () => {
-  // const [search, setSearch] = useState("");
-  // const [searchResults, setSearchResults] = useState([]);
+  const [selectedValue, setSelectedValue] = useState("Todos");
 
-  // const handleSearch = (e) => {
-  //   const query = e.target.value.toLowerCase();
-  //   setSearch(query);
-
-  //   const results = Data.filter((item) => {
-  //     return item.tags.some((tag) => tag.toLowerCase().includes(query));
-  //   });
-
-  //   setSearchResults(results);
-  // };
-  const selector = (e) => {};
+  const handleSelectChange = (event) => {
+    setSelectedValue(event.target.value);
+  };
 
   return (
     <div className="App">
       <form>
-        {/* <input
-          className="input"
-          type="text"
-          placeholder="Search..."
-          value={search}
-          onChange={handleSearch}
-        /> */}
-        <select className="selector">
-          <option value="todos" selected>Todos</option>
+        <select className="selector" value={selectedValue} onChange={handleSelectChange}>
+          <option value="todos">Todos</option>
           <option value="sesión">Clase</option>
           <option value="tutoría">Tutoría</option>
           <option value="file">Otros</option>
         </select>
-        <Ensayo />
+        <Ensayo selectedValue={selectedValue} />
       </form>
-      <Card filtered={selector}/>
     </div>
   );
 };
 
 export default App;
-
-// =========================================================================================
-
-// const SearchBar = () => {
-//   return (
-//     <div>
-      
-//       {searchResults.map((item) => (
-//         <div key={item.id}>
-//           <h3>{item.type}</h3>
-//           <p>{item.description}</p>
-//           <a href={item.link}>Link</a>
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };

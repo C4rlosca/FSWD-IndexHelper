@@ -1,6 +1,6 @@
-import Data from "./db/data.json";
+import React from "react";
 
-const Ensayo = () => {
+const Ensayo = ({ selectedValue }) => {
   return (
     <h2
       style={{
@@ -9,7 +9,7 @@ const Ensayo = () => {
         fontSize: "3rem",
       }}
     >
-      Hello
+      {selectedValue}
     </h2>
   );
 };
