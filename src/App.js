@@ -1,7 +1,7 @@
 import "./App.css";
 import Data from "./db/data.json";
 import SearchBar from "./Components/SearchBar";
-import Wrapper from "./Components/Wrapper";
+import CardWrapper from "./Components/Wrapper";
 import Card from "./Components/Card";
 import { useState } from "react";
 
@@ -40,10 +40,11 @@ const App = () => {
   return (
     <>
       <header>
+        <h1 className="Header-title">FSWD12 - IndexHelper</h1>
         <SearchBar onSearch={handleSearch} />
       </header>
       <main>
-        <Wrapper>
+        <CardWrapper>
           {items.length > 0 ? (
             items.map((item) => {
               return (
@@ -68,7 +69,7 @@ const App = () => {
           ) : (
             <h4 className="alert">No results found</h4>
           )}
-        </Wrapper>
+        </CardWrapper>
       </main>
       <footer>Made with love by -Javi & Carlos-</footer>
     </>

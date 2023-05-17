@@ -34,11 +34,11 @@ const Card = (props) => {
                 )} ${props.session}`
               : ""}
           </p>
+          <p className="File-title">{props.title}</p>
           <p className="Date">
             {DatetoString(props.year, props.month, props.day)}
           </p>
           <p>{props.teacher}</p>
-          <span>{props.title}</span>
           <span>{props.file}</span>
         </div>
         <div className="Duration">

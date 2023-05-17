@@ -22,13 +22,13 @@ const SearchBar = (props) => {
         value={search[0]}
         onChange={handleChange}
       />
+      <button type="submit">GO</button>
       <select name="selector" onChange={handleChange} value={search[1]}>
         <option value="todos">Todos</option>
         <option value="sesión">Clase</option>
         <option value="tutoría">Tutoría</option>
         <option value="file">Otros</option>
       </select>
-      <button type="submit">Search</button>
     </form>
   );
 };
