@@ -26,10 +26,13 @@ const Card = (props) => {
     console.log(e.target.innerText);
     props.onSearch([e.target.innerText, "todos"]);
   };
+  const handleGoTo = () => {
+    window.open(props.link, "_blank");
+  };
 
   return (
     <div className="Card">
-      <section className="Thumbnail">
+      <section onClick={handleGoTo} className="Thumbnail">
         <img src={!props.file ? VID : DOC} alt="thumbnail" />
         <div className="Title">
           <p className="Label">

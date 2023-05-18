@@ -1,5 +1,6 @@
 header {
-  width: 450px;
+  width: 100%;
+  max-width: 1500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,6 +14,7 @@ header h1.Header-title {
   font-size: 3rem;
   animation: shadow-change 4s infinite;
   text-shadow: #ffffff80 0 0 10px;
+  cursor:pointer;
 }
 @keyframes shadow-change {
   0% {
@@ -27,8 +29,21 @@ header h1.Header-title {
 }
 main {
   width: 100%;
+  max-width: 1500px;
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
+}
+@media screen and (min-width: 1485px) {
+  header {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+  }
+  header h1.Header-title {
+    margin: 0;
+  }
 }

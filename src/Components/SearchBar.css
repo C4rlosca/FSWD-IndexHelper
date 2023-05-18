@@ -24,6 +24,7 @@ form:hover {
 input[name="search"] {
   order: 1;
   width: 70%;
+  flex-grow: 1;
   height: 50px;
   padding: 0 10px;
   background-color: transparent;
@@ -39,7 +40,7 @@ input[name="search"]:autofill,
 input[name="search"]:-webkit-autofill {
   background-color: black;
   color: white;
-  box-shadow: #000000 0 0 15px 10px inset;
+  box-shadow: #000000 0 0 30px 10px inset;
 }
 form:hover input::placeholder {
   text-shadow: #ffffff40 0 0 10px;
@@ -52,6 +53,7 @@ select[name="selector"] {
   order: 3;
   width: 25%;
   height: 50px;
+  flex-grow: 0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border: 10px solid transparent;
@@ -60,10 +62,7 @@ select[name="selector"] {
   font-size: 1.5rem;
   font-weight: 300;
   outline: none;
-}
-select[name="selector"]:focus ~ button {
-  background-color: #6e6e6e;
-  animation: blinking 3s infinite;
+  text-align: center;
 }
 form:hover select[name="selector"] {
   text-shadow: #ffffff40 0 0 10px;
@@ -95,6 +94,10 @@ button[type="submit"] {
     color: white;
 } */
 input:focus ~ button {
+  background-color: #6e6e6e;
+  animation: blinking 3s infinite;
+}
+select:focus ~ button {
   background-color: #6e6e6e;
   animation: blinking 3s infinite;
 }
@@ -137,4 +140,18 @@ button[type="submit"]:active {
   color: #303030;
   transform: translateY(2px);
   transition: transform 0s ease-in-out;
+}
+@media screen and (min-width: 995px) {
+  form {
+    width: 940px;
+  }
+  input[name="search"] {
+    width: 70%;
+  }
+  select[name="selector"] {
+    width: 15%;
+  }
+  button[type="submit"] {
+    width: 8%;
+  }
 }

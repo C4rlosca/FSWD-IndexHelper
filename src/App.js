@@ -43,11 +43,14 @@ const App = () => {
     console.log(filteredItems);
     setItems(filteredItems);
   };
+  const handleTitle = () => {
+    window.location.reload();
+  };
 
   return (
     <>
       <header>
-        <h1 className="Header-title">FSWD12 - IndexHelper</h1>
+        <h1 onClick={handleTitle} className="Header-title">FSWD12 - IndexHelper</h1>
         <SearchBar onSearch={handleSearch} />
       </header>
       <main>

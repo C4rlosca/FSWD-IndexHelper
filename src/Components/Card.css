@@ -16,7 +16,7 @@
   transition: all 0.2s ease-in-out;
 }
 .Card:hover {
-  box-shadow: #ffffff30 0 0 10px;
+  box-shadow: #ffffff30 0 0 20px;
   transition: all 0.1s ease-in-out;
 }
 .Card section.Thumbnail {
@@ -28,6 +28,7 @@
   border-top-right-radius: 15px;
   overflow: hidden;
   background-color: black;
+  cursor: pointer;
 }
 /* .Card .Thumbnail div.Overlay {
   position: relative;
@@ -124,15 +125,16 @@
   margin: 0 auto;
 }
 .Card .Elements div.BottomCard {
-  width: 100%;
+  width: 450px;
   height: 60%;
-  display: flex;
+  display:flex;
   flex-direction: row;
   justify-content: left;
   align-items: center;
 }
 .Card .Elements .BottomCard button {
   width: 60px;
+  min-width: 60px;
   height: 60px;
   margin: 15px;
   background-color: #737373;
@@ -157,6 +159,8 @@
 }
 .Card .Elements .BottomCard ul {
   display: flex;
+  width: 390px; /* 450px - 60px */
+  min-width: 373px; /* hidding scrollbar */
   height: 70%;
   min-height: 70%;
   max-height: 70%;
@@ -164,7 +168,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  flex-basis: 70%;
+  flex-basis: fill;
   padding: 0;
   margin: 0;
   overflow-y: scroll;
