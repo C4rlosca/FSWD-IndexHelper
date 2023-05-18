@@ -23,7 +23,6 @@ const Card = (props) => {
     return date;
   };
   const handleClick = (e) => {
-    console.log(e.target.innerText);
     props.onSearch([e.target.innerText, "todos"]);
   };
   const handleGoTo = () => {

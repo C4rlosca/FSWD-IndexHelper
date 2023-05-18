@@ -1,5 +1,4 @@
 [
- 
   {
     "id": 999,
     "type": "tutoría",
@@ -66,7 +65,18 @@
   {
     "id": 3,
     "type": "file",
-    "tags": ["máquina virtual", "máquina", "maquina", "virtual", "virtualbox", "vbox","linux", "mint", "linux mint", "linuxmint"],
+    "tags": [
+      "máquina virtual",
+      "máquina",
+      "maquina",
+      "virtual",
+      "virtualbox",
+      "vbox",
+      "linux",
+      "mint",
+      "linux mint",
+      "linuxmint"
+    ],
     "year": 2023,
     "month": 2,
     "day": 10,
@@ -79,7 +89,18 @@
   {
     "id": 4,
     "type": "sesión",
-    "tags": ["instalación", "instalacion", "virtualbox", "vbox", "máquina virtual", "máquina", "maquina", "virtual", "tutorial"],
+    "session": "#",
+    "tags": [
+      "instalación",
+      "instalacion",
+      "virtualbox",
+      "vbox",
+      "máquina virtual",
+      "máquina",
+      "maquina",
+      "virtual",
+      "tutorial"
+    ],
     "description": "Tutorial de cómo instalar la máquina virtual",
     "year": 2023,
     "month": 2,
@@ -91,7 +112,15 @@
   {
     "id": 5,
     "type": "file",
-    "tags": ["glosario","glosario de términos", "terminos", "glosario de conceptos", "conceptos", "glosario de palabras", "palabras"],
+    "tags": [
+      "glosario",
+      "glosario de términos",
+      "terminos",
+      "glosario de conceptos",
+      "conceptos",
+      "glosario de palabras",
+      "palabras"
+    ],
     "year": 2023,
     "month": 2,
     "day": 10,
@@ -103,7 +132,15 @@
   {
     "id": 6,
     "type": "file",
-    "tags": ["presentación","instalaciones", "planificación", "modulos", "programa docente", "docente", "módulos"],
+    "tags": [
+      "presentación",
+      "instalaciones",
+      "planificación",
+      "modulos",
+      "programa docente",
+      "docente",
+      "módulos"
+    ],
     "year": 2023,
     "month": 2,
     "day": 10,
@@ -128,7 +165,19 @@
   {
     "id": 8,
     "type": "file",
-    "tags": ["presentación","git", "consola", "terminal","github","gitlab","bitbucket","gitkraken","gitflow","gitignore","gi"],
+    "tags": [
+      "presentación",
+      "git",
+      "consola",
+      "terminal",
+      "github",
+      "gitlab",
+      "bitbucket",
+      "gitkraken",
+      "gitflow",
+      "gitignore",
+      "gi"
+    ],
     "year": 2023,
     "month": 2,
     "day": 14,
@@ -140,7 +189,23 @@
   {
     "id": 9,
     "type": "file",
-    "tags": ["ejercicios","git", "consola", "terminal","github","gitlab","bitbucket","gitkraken","gitflow","gitignore","gi","prácticas","practicas","practica","práctica"],
+    "tags": [
+      "ejercicios",
+      "git",
+      "consola",
+      "terminal",
+      "github",
+      "gitlab",
+      "bitbucket",
+      "gitkraken",
+      "gitflow",
+      "gitignore",
+      "gi",
+      "prácticas",
+      "practicas",
+      "practica",
+      "práctica"
+    ],
     "year": 2023,
     "month": 2,
     "day": 14,
@@ -152,7 +217,23 @@
   {
     "id": 10,
     "type": "file",
-    "tags": ["ejercicios","git", "consola", "terminal","github","gitlab","bitbucket","gitkraken","gitflow","gitignore","gi","prácticas","practicas","practica","práctica"],
+    "tags": [
+      "ejercicios",
+      "git",
+      "consola",
+      "terminal",
+      "github",
+      "gitlab",
+      "bitbucket",
+      "gitkraken",
+      "gitflow",
+      "gitignore",
+      "gi",
+      "prácticas",
+      "practicas",
+      "practica",
+      "práctica"
+    ],
     "year": 2023,
     "month": 2,
     "day": 14,
@@ -164,7 +245,23 @@
   {
     "id": 11,
     "type": "file",
-    "tags": ["ejercicios","git", "consola", "terminal","github","gitlab","bitbucket","gitkraken","gitflow","gitignore","gi","prácticas","practicas","practica","práctica"],
+    "tags": [
+      "ejercicios",
+      "git",
+      "consola",
+      "terminal",
+      "github",
+      "gitlab",
+      "bitbucket",
+      "gitkraken",
+      "gitflow",
+      "gitignore",
+      "gi",
+      "prácticas",
+      "practicas",
+      "practica",
+      "práctica"
+    ],
     "year": 2023,
     "month": 2,
     "day": 14,
@@ -176,7 +273,23 @@
   {
     "id": 12,
     "type": "file",
-    "tags": ["ejercicios","git", "consola", "terminal","github","gitlab","bitbucket","gitkraken","gitflow","gitignore","gi","prácticas","practicas","practica","práctica"],
+    "tags": [
+      "ejercicios",
+      "git",
+      "consola",
+      "terminal",
+      "github",
+      "gitlab",
+      "bitbucket",
+      "gitkraken",
+      "gitflow",
+      "gitignore",
+      "gi",
+      "prácticas",
+      "practicas",
+      "practica",
+      "práctica"
+    ],
     "year": 2023,
     "month": 2,
     "day": 14,
@@ -185,11 +298,4 @@
     "title": "Ejercicios Git 2",
     "description": "Ejercicios básico de cómo realizar un Readme.md y subirlo a un repositorio de GitHub"
   }
-
-
-
-
-
-
-
 ]

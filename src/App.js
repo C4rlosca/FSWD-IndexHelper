@@ -10,30 +10,30 @@ import { useState } from "react";
 const App = () => {
   const [items, setItems] = useState(Data);
   const handleTagSearch = (tag) => {
-    console.log("handleTagSearch", tag);
     handleSearch(tag);
-    window.scrollTo({ top: 75, behavior: "smooth" });
+    const windowWidth = window.innerWidth;
+    let topValue;
+
+    if (windowWidth >= 995) {
+      topValue = 81;
+    } else {
+      topValue = 70;
+    }
+
+    window.scrollTo({ top: topValue, behavior: "smooth" });
   };
   const handleSearch = (search) => {
-    console.log("handlesearch", search);
-
     let filteredItems = [];
     if (search[1] === "todos" && search[0].length > 0) {
-      console.log("Filtrar por tags y selector -todos-");
       filteredItems = Data.filter((item) => {
         return item.tags.includes(search[0].toLowerCase()); //
       });
     } else if (search[1] === "todos" && search[0].length === 0) {
-      console.log(
-        "Mostrar todos los elementos cuando la selección es -todos- sin búsqueda"
-      );
       filteredItems = Data;
     } else {
       if (search[0].length === 0) {
-        console.log("Filtrar por tipo cuando no hay palabra para la busqueda");
         filteredItems = Data.filter((item) => item.type.includes(search[1]));
       } else {
-        console.log("Filtrar por palabra clave y tipo");
         filteredItems = Data.filter((item) => {
           return (
             item.tags.includes(search[0].toLowerCase()) &&
@@ -52,9 +52,13 @@ const App = () => {
   return (
     <>
       <header>
-        <FontAwesomeIcon icon={faPersonThroughWindow} className="Jump" onClick={handleTitle}/>
+        <FontAwesomeIcon
+          icon={faPersonThroughWindow}
+          className="Jump"
+          onClick={handleTitle}
+        />
         <h1 onClick={handleTitle} className="Header-title">
-           FSWD12 - IndexHelper
+          FSWD12 - IndexHelper
         </h1>
         <SearchBar onSearch={handleSearch} />
       </header>
