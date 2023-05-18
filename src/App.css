@@ -1,8 +1,9 @@
 header {
-  width: 100%;
+  width: 450px;
   max-width: 1500px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -11,10 +12,11 @@ header h1.Header-title {
   text-align: center;
   color: white;
   margin: 20px 0 0;
-  font-size: 3rem;
+  font-size: 2.5rem;
   animation: shadow-change 4s infinite;
   text-shadow: #ffffff80 0 0 10px;
-  cursor:pointer;
+  cursor: pointer;
+  word-wrap: normal;
 }
 @keyframes shadow-change {
   0% {
@@ -37,13 +39,52 @@ main {
   align-items: center;
   margin: 0 auto;
 }
+.Jump {
+  text-align: center;
+  color: white;
+  margin: 20px 0 0;
+  font-size: 3.5rem;
+  animation: jump-change 4s infinite;
+  cursor: pointer;-size: 4rem;
+  padding-right: 15px;
+}
+@keyframes jump-change {
+  0% {
+    transform: translateY(3px);
+  }
+  50% {
+    transform: translateY(-1px);
+  }
+  100% {
+    transform: translateY(3px);
+  }
+}
+
+/* BREAKPOINTS---------------------- */
+@media screen and (min-width: 995px) {
+  header,
+  main {
+    width: 980px;
+    max-width: 980px;
+    flex-wrap: wrap;
+  }
+  header h1.Header-title {
+    font-size: 3.5rem;
+  }
+}
 @media screen and (min-width: 1485px) {
+  header,
+  main {
+    width: 1500px;
+    max-width: 1500px;
+  }
   header {
     flex-direction: row;
     align-items: center;
     margin-top: 15px;
   }
-  header h1.Header-title {
+  header h1.Header-title, 
+  .Jump {
     margin: 0;
   }
 }

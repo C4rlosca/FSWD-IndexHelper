@@ -1,4 +1,6 @@
 import "./App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPersonThroughWindow } from "@fortawesome/free-solid-svg-icons";
 import Data from "./db/data.json";
 import SearchBar from "./Components/SearchBar";
 import CardWrapper from "./Components/Wrapper";
@@ -50,7 +52,10 @@ const App = () => {
   return (
     <>
       <header>
-        <h1 onClick={handleTitle} className="Header-title">FSWD12 - IndexHelper</h1>
+        <FontAwesomeIcon icon={faPersonThroughWindow} className="Jump" onClick={handleTitle}/>
+        <h1 onClick={handleTitle} className="Header-title">
+           FSWD12 - IndexHelper
+        </h1>
         <SearchBar onSearch={handleSearch} />
       </header>
       <main>
