@@ -7,6 +7,11 @@ import { useState } from "react";
 
 const App = () => {
   const [items, setItems] = useState(Data);
+  const handleTagSearch = (tag) => {
+    console.log("handleTagSearch", tag);
+    handleSearch(tag);
+    window.scrollTo({ top: 75, behavior: "smooth" });
+  };
   const handleSearch = (search) => {
     console.log("handlesearch", search);
 
@@ -14,10 +19,12 @@ const App = () => {
     if (search[1] === "todos" && search[0].length > 0) {
       console.log("Filtrar por tags y selector -todos-");
       filteredItems = Data.filter((item) => {
-        return item.tags.includes(search[0].toLowerCase());//
+        return item.tags.includes(search[0].toLowerCase()); //
       });
     } else if (search[1] === "todos" && search[0].length === 0) {
-      console.log("Mostrar todos los elementos cuando la selección es -todos- sin búsqueda");
+      console.log(
+        "Mostrar todos los elementos cuando la selección es -todos- sin búsqueda"
+      );
       filteredItems = Data;
     } else {
       if (search[0].length === 0) {
@@ -49,6 +56,7 @@ const App = () => {
             items.map((item) => {
               return (
                 <Card
+                  onSearch={handleTagSearch}
                   key={item.id}
                   file={item.file}
                   type={item.type}

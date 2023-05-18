@@ -2,10 +2,15 @@ import "./SearchBar.css";
 import React, { useState } from "react";
 
 const SearchBar = (props) => {
+  const currentTime = new Date();
   const [search, setSearch] = useState(["", "todos"]);
   const handleChange = (e) => {
+    console.log("handleChange\n" ,currentTime);
     const name = e.target.name;
-    let request = name === "search" ? [e.target.value, search[1]] : [search[0], e.target.value];
+    let request =
+      name === "search"
+        ? [e.target.value, search[1]]
+        : [search[0], e.target.value];
     setSearch(request);
   };
   const handleSubmit = (e) => {

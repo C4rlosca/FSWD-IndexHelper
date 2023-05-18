@@ -22,6 +22,11 @@ const Card = (props) => {
     let date = `${day}/${month}/${year}`;
     return date;
   };
+  const handleClick = (e) => {
+    console.log(e.target.innerText);
+    props.onSearch([e.target.innerText, "todos"]);
+  };
+
   return (
     <div className="Card">
       <section className="Thumbnail">
@@ -54,7 +59,7 @@ const Card = (props) => {
           <button href={props.link}>Docs</button>
           <ul>
             {props.tags.map((tag, index) => {
-              return <li key={index}>{tag}</li>;
+              return <li onClick={handleClick} key={index}>{tag}</li>;
             })}
           </ul>
         </div>
