@@ -5,6 +5,7 @@ import Data from "./db/data.json";
 import SearchBar from "./Components/SearchBar";
 import CardWrapper from "./Components/Wrapper";
 import Card from "./Components/Card";
+import Footer from "./Components/Footer";
 import { useState } from "react";
 
 const App = () => {
@@ -91,7 +92,7 @@ const App = () => {
           )}
         </CardWrapper>
       </main>
-      <footer>Made with love by -Javi & Carlos-</footer>
+      <Footer/>
     </>
   );
 };
