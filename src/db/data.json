@@ -114,7 +114,7 @@
   {
     "id": 7,
     "type": "sesión",
-    "session": 0,
+    "session": "0",
     "tags": ["presentación", "git", "consola", "terminal"],
     "description": "Presentación de módulos y primeros toques a la consola de comandos",
     "year": 2023,
