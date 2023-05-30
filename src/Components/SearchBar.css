@@ -1,0 +1,160 @@
+/* FORM */
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 450px;
+  min-width: 450px;
+  height: 50px;
+  margin: 10px 20px 0;
+  border: 2px solid #303030;
+  border-radius: 15px;
+  background-color: #1f1f1f;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  box-shadow: none;
+  transition: box-shadow 0.2s ease-in-out;
+}
+form:hover {
+  box-shadow: #ffffff30 0 0 5px;
+  transition: all 0.1s ease-in-out;
+}
+
+/* INPUT */
+input[name="search"] {
+  order: 1;
+  width: 70%;
+  flex-grow: 1;
+  height: 50px;
+  padding: 0 10px;
+  background-color: transparent;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 300;
+  outline: none;
+}
+/* -------------------- */
+input[name="search"]:-webkit-autofill,
+input[name="search"]:autofill {
+  box-shadow:#1f1f1f 0 0 30px 40px inset;
+  -webkit-text-fill-color: white;
+}
+form:hover input::placeholder {
+  text-shadow: #ffffff40 0 0 10px;
+  color: #8f8f8f;
+  transition: all 0.2s ease-in-out;
+}
+
+/* SELECT */
+select[name="selector"] {
+  order: 3;
+  width: 25%;
+  height: 50px;
+  flex-grow: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 10px solid transparent;
+  background-color: transparent;
+  color: #8f8f8f;
+  font-size: 1.5rem;
+  font-weight: 300;
+  outline: none;
+  text-align: center;
+}
+form:hover select[name="selector"] {
+  text-shadow: #ffffff40 0 0 10px;
+  color: #ffffff90;
+  transition: all 0.2s ease-in-out;
+}
+select[name="selector"] option {
+  background-color: #1f1f1f;
+}
+
+/* BUTTON */
+button[type="submit"] {
+  order: 2;
+  width: 15%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: #303030;
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+}
+/* button[type="submit"]::-webkit-search-cancel-button {
+    position: relative;
+    right: 30px;
+    color: white;
+} */
+input:focus ~ button {
+  background-color: #6e6e6e;
+  animation: blinking 3s infinite;
+}
+select:focus ~ button {
+  background-color: #6e6e6e;
+  animation: blinking 3s infinite;
+}
+@keyframes blinking {
+  0% {
+    background-color: #303030;
+  }
+  50% {
+    background-color: #6e6e6e;
+  }
+  100% {
+    background-color: #303030;
+  }
+}
+button[type="submit"]:hover {
+  background-color: #fff;
+  color: #303030;
+  animation: button-change 2.5s infinite;
+  text-shadow: #cacaca 0 3px, #cacaca 0 2px;
+  transform: translateY(-1px);
+  box-shadow: black 0 2px 5px;
+  transition: all 0.2s ease-in-out;
+}
+@keyframes button-change {
+  0% {
+    background-color: #fff;
+    color: #303030;
+  }
+  50% {
+    background-color: #d2d2d2;
+    color: #303030;
+  }
+  100% {
+    background-color: #fff;
+    color: #303030;
+  }
+}
+button[type="submit"]:active {
+  background-color: #fff;
+  color: #303030;
+  transform: translateY(2px);
+  transition: transform 0s ease-in-out;
+}
+
+/* BREAKPOINTS-------------------- */
+@media screen and (min-width: 995px) {
+  form {
+    min-width: 940px;
+  }
+  input[name="search"] {
+    width: 70%;
+  }
+  select[name="selector"] {
+    width: 15%;
+  }
+  button[type="submit"] {
+    width: 8%;
+  }
+}

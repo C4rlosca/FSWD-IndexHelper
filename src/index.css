@@ -1,0 +1,27 @@
+:root {
+  box-sizing: border-box;
+  font-size: 0.785rem;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: none 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #181818;
+}

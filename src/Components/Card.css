@@ -1,0 +1,221 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+  height: 350px;
+  margin: 20px;
+  border: 2px solid #303030;
+  border-radius: 15px;
+  background-color: #1f1f1f;
+  color: white;
+  overflow: hidden;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+.Card:hover {
+  box-shadow: #ffffff30 0 0 20px;
+  transition: all 0.1s ease-in-out;
+}
+.Card section.Thumbnail {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  position: relative;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+  background-color: black;
+  cursor: pointer;
+}
+/* .Card .Thumbnail div.Overlay {
+  position: relative;
+  background: linear-gradient(25deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,1) 100%);
+} */
+.Card .Thumbnail div.Title {
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  text-align: right;
+  max-width: 200px;
+}
+.Card .Thumbnail .Title p.Label {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.Card .Thumbnail .Title p.File-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 16px;
+  margin: 5px 0;
+}
+.Card .Thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0% 20%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: all 0.3s ease-in-out;
+  mask-image: linear-gradient(
+    30deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 5%,
+    rgba(0, 0, 0, 1) 25%,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(0, 0, 0, 0.2) 80%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+/* .Card:hover .Thumbnail img {
+  transform: scale(1.02);
+  transition: all 0.3s linear;
+  pointer-events: none;
+  overflow: hidden;
+} */
+.Card:hover .Thumbnail .Title {
+  text-shadow: #fff 0 0 20px;
+  cursor: pointer;
+  transition: text-shadow 0.15s ease-in-out;
+}
+.Card .Thumbnail div.Duration {
+  position: absolute;
+  bottom: 1px;
+  left: 5px;
+}
+.Card .Thumbnail .Duration p {
+  opacity: 0.85;
+  background-color: #ffffff20;
+  padding: 0.05em 0.25em;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+.Card section.Elements {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.Card .Elements div.Description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40%;
+  max-height: 40%;
+  width: 100%;
+  padding: 0 10px;
+  text-overflow: hidden;
+  overflow: hidden;
+}
+.Card .Elements div.Description p {
+  max-height: 100%;
+  padding: 5px 0;
+  overflow: hidden;
+  text-overflow: hidden;
+}
+.Card .Elements div.Separator {
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  margin: 0 auto;
+}
+.Card .Elements div.BottomCard {
+  width: 450px;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.Card .Elements .BottomCard button {
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  margin: 15px;
+  background-color: #737373;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #515151 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  transition: box-shadow 0.15s, transform 0.15s;
+  will-change: box-shadow, transform;
+}
+.Card .Elements .BottomCard button:hover {
+  box-shadow: rgba(164, 164, 164, 0.4) 0 4px 8px,
+    rgba(4164, 164, 164, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+.Card .Elements .BottomCard button:active {
+  box-shadow: #d6d6e770 0 -8px 5px 0 inset, #00000070 0 5px 3px inset;
+  transform: translateY(2px);
+}
+.Card .Elements .BottomCard ul {
+  display: flex;
+  width: 390px; /* 450px - 60px */
+  min-width: 375px; /* hidding scrollbar */
+  height: 70%;
+  min-height: 70%;
+  max-height: 70%;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-basis: fill;
+  padding: 0 2px 0;
+  margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+/* ------------------------- */
+/* .Card .Elements .BottomCard:has(ul:hover) {
+  animation: backMoves 1s ease-in-out;
+  background: radial-gradient(
+    circle at bottom,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0) 45%
+  );
+  background-size: 200% 200%;
+  background-position: 300%;
+}
+@keyframes backMoves {
+  0% {
+    background-position: -50% 0%;
+  }
+  100% {
+    background-position: 150% 0%;
+  }
+} */
+
+/* -------------------------- */
+/* .Card .Elements .BottomCard ul::-webkit-scrollbar-thumb {
+  height: 30%;
+  width: 5px;
+  color: red;
+} */
+.Card .Elements .BottomCard ul li {
+  background-color: #303030;
+  padding: 0.2em 0.5em;
+  margin: 0.2em 0.2em;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+.Card .Elements .BottomCard ul li:hover {
+  cursor: pointer;
+  background-color: #73737380;
+  transition: background-color 0.2s;
+  will-change: background-color;
+}
+.Card .Elements .BottomCard ul li:active {
+  transform: translateY(2px);
+}
